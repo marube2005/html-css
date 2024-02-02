@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+body{
+height: 500vh;
+/* width: fit-content; */
+}
+
+.left-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.myimage1{
+    height: 35px;
+    margin-left: 80px;
+}
+.myimage2{
+    height: 35px;
+    margin-left: 30px;
+}
+.middle-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    /* width: ;  */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    /* height: 50px; */
+}
+
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.right-section{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+button{
+    margin-right: 45px;
+    margin-left: 25px;
+    background-color: rgb(241, 98, 45);
+    border: none;
+    color: #fff;
+    padding: 8px 20px 8px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.15 ease;
+}
+button:hover{
+    opacity: 0.3;
+}
+button:active{
+    background-color: rgb(85, 62, 233);
+    color: beige;
+}
+
+.image3{
+    height: 35px;
+    margin-left: 45px;
+}
+
+.myimage{
+        width: 100%; /* Make the image responsive within its container */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%;
+}
+.first-image{
+    position: absolute;
+}
+.bike-top{
+    display: flex;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    color: #fff;
+    align-items: center;
+   font-family: Arial, Helvetica, sans-serif; 
+   font-weight: 900;
+   font-size: 50px;
+   /* margin: auto; */
+   padding-left: 350px;
+   padding-top: 110px;
+}
+/* .web-body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+} */
+@media (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .left-section, .middle-section, .right-section {
+        display: inline-block;
+        text-align: center;
+        max-width: 100%;
+        height: 30%;
+    }
+
+    .myimage1, .myimage2, .image3 {
+        margin: 5px; /* Adjust spacing for smaller screens */
+    }
+
+    .middle-section li {
+        margin: 5px;
+    }
+
+    button {
+        margin: 10px;
+    }
+
+    .web-body {
+        text-align: center; 
+        width: 100%;
+        height: auto;
+    }
+
+    .bike-top {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 301px) and (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .left-section, .middle-section, .right-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        height: 30%;
+    }
+    .myimage {
+        max-width: 100%;
+        display: flex;
+    }
+    .web-body {
+        text-align: center; 
+        width: 100%;
+        height: auto;
+    }
+
+    .bike-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+        /* margin-top: 100px; */
+    }
+    li{
+        display: block;
+        margin-left: 0%;
+
+    }
+}
+
+/* Responsive adjustments for screens below 300px */
+@media (min-width : 0px)and(max-width: 300px) {
+    .myimage {
+        max-width: 100%;
+    }
+}
+h1{
+    text-align: center;
+    margin-top: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight :900;
+}

@@ -1,0 +1,8 @@
+#include<stdio.h>
+main()
+{
+    int age =19;
+    printf("Name: Newton Ambani"\n);
+printf("Your age next year is %d",age);
+++age;
+}

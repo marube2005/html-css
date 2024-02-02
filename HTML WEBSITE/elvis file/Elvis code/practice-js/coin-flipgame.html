@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin game</title>
+</head>
+<body>
+    <script>
+        const variable1 =Math.random() 
+        let result;
+        if(variable1 > 0 && variable1 <= 0.5)
+        {
+            document.write('head');
+            result = 'head';
+        }
+        else
+            document.write('tail');  
+            result = 'tail';
+        
+        const guess = prompt('Choose either head or tail');
+
+      if(guess === result)
+         {
+            alert('You win');
+         }
+         else{
+            alert('You Lose');
+         }
+
+    </script>
+</body>
+</html>

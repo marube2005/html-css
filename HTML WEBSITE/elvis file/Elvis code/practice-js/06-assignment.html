@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment</title>
+</head>
+<body>
+    <script>
+    //     const name = prompt('Enter your name');
+    //    const hour = prompt('Enter a value of the 24 hour system')
+    //     if(hour <0 || hour >24 ){
+    //        document.write("No such Hour exists");
+    //     }
+    //      else if(hour >=6 && hour <= 12)
+    //      {
+    //         alert(`Good morning ${name}!`);
+    //      }
+    //      else if ( hour >= 13 && hour <=17)
+    //      {
+    //         alert(`Good afternoon ${name}!`);
+    //      }
+    //      else
+    //      {
+    //         alert(`Good night ${name}!`);
+    //      }
+
+    const age = prompt('Enter your age');
+        if( age < 0 || age > 120)
+        {
+            document.write('Invalid age'); 
+        }
+        else if(age >= 0 && age <=6 || age >= 65)
+        {
+            alert('Discount');
+        }
+        else
+        {
+            alert('No discount');
+
+        }
+        const isHoliday = prompt('Is today a holiday');
+        if(isHoliday === 'No'){
+            document.write('Discount');
+        }
+        else{
+            document.write('No discount');
+        }
+        if(age && isHoliday==='No' )
+        {
+            alert('Congrats Discount');
+        }
+    
+    </script>
+</body>
+</html>
